@@ -1,0 +1,228 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		950CC37914BDF0F3004D17A4 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 950CC37814BDF0F3004D17A4 /* main.c */; };
+		950CC38514BE09D6004D17A4 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950CC38114BE08AC004D17A4 /* CoreServices.framework */; };
+		950CC38614BE0A14004D17A4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 950CC37514BDF0F3004D17A4 /* CoreFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		950CC37114BDF0F3004D17A4 /* onchange */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = onchange; sourceTree = BUILT_PRODUCTS_DIR; };
+		950CC37514BDF0F3004D17A4 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		950CC37814BDF0F3004D17A4 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
+		950CC38114BE08AC004D17A4 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		950CC38314BE09C2004D17A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		950CC38814BF8161004D17A4 /* fake_compile.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = fake_compile.sh; path = test/fake_compile.sh; sourceTree = "<group>"; };
+		950CC38B14BF8235004D17A4 /* part_a.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = part_a.js; path = test/part_a.js; sourceTree = "<group>"; };
+		950CC38D14BF8249004D17A4 /* part_b.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = part_b.js; path = test/part_b.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		950CC36E14BDF0F3004D17A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				950CC38614BE0A14004D17A4 /* CoreFoundation.framework in Frameworks */,
+				950CC38514BE09D6004D17A4 /* CoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		950CC36614BDF0F3004D17A4 = {
+			isa = PBXGroup;
+			children = (
+				950CC38A14BF81A5004D17A4 /* test */,
+				950CC38314BE09C2004D17A4 /* Foundation.framework */,
+				950CC38114BE08AC004D17A4 /* CoreServices.framework */,
+				950CC37714BDF0F3004D17A4 /* onchange */,
+				950CC37414BDF0F3004D17A4 /* Frameworks */,
+				950CC37214BDF0F3004D17A4 /* Products */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			usesTabs = 0;
+			wrapsLines = 1;
+		};
+		950CC37214BDF0F3004D17A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				950CC37114BDF0F3004D17A4 /* onchange */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		950CC37414BDF0F3004D17A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				950CC37514BDF0F3004D17A4 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		950CC37714BDF0F3004D17A4 /* onchange */ = {
+			isa = PBXGroup;
+			children = (
+				950CC37814BDF0F3004D17A4 /* main.c */,
+			);
+			path = onchange;
+			sourceTree = "<group>";
+		};
+		950CC38A14BF81A5004D17A4 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				950CC38814BF8161004D17A4 /* fake_compile.sh */,
+				950CC38B14BF8235004D17A4 /* part_a.js */,
+				950CC38D14BF8249004D17A4 /* part_b.js */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		950CC37014BDF0F3004D17A4 /* onchange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 950CC37E14BDF0F3004D17A4 /* Build configuration list for PBXNativeTarget "onchange" */;
+			buildPhases = (
+				950CC36D14BDF0F3004D17A4 /* Sources */,
+				950CC36E14BDF0F3004D17A4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = onchange;
+			productName = onchange;
+			productReference = 950CC37114BDF0F3004D17A4 /* onchange */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		950CC36814BDF0F3004D17A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 950CC36B14BDF0F3004D17A4 /* Build configuration list for PBXProject "onchange" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 950CC36614BDF0F3004D17A4;
+			productRefGroup = 950CC37214BDF0F3004D17A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				950CC37014BDF0F3004D17A4 /* onchange */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		950CC36D14BDF0F3004D17A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				950CC37914BDF0F3004D17A4 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		950CC37C14BDF0F3004D17A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		950CC37D14BDF0F3004D17A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		950CC37F14BDF0F3004D17A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		950CC38014BDF0F3004D17A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		950CC36B14BDF0F3004D17A4 /* Build configuration list for PBXProject "onchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				950CC37C14BDF0F3004D17A4 /* Debug */,
+				950CC37D14BDF0F3004D17A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		950CC37E14BDF0F3004D17A4 /* Build configuration list for PBXNativeTarget "onchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				950CC37F14BDF0F3004D17A4 /* Debug */,
+				950CC38014BDF0F3004D17A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 950CC36814BDF0F3004D17A4 /* Project object */;
+}
