@@ -22,17 +22,15 @@ static char *command;
 
 static void printline();
 
-static void exec_command()
+static void exec_command(char *args[])
 {
     printline();
 
     pid_t pid = fork();
-    
     if(pid < 0) {
         fprintf(stderr, "error: couldn't fork\n");
         exit(1);
     } else if (pid == 0) {
-        char *args[4] = { "/bin/bash", "-c", command, 0 };
         if(execve(args[0], args, environ) < 0) {
             fprintf(stderr, "error: error executing\n");
             exit(1);
@@ -60,12 +58,13 @@ static void callback (ConstFSEventStreamRef streamRef,
                       const FSEventStreamEventFlags eventFlags[],
                       const FSEventStreamEventId eventIds[])
 {
-    LOG("callback called\n");
+    char **args = calloc(2 + numEvents, sizeof(char *));
+    args[0] = command;
     for (int i = 0; i < numEvents; i++) {
         LOG("  eventPaths[%d]=\"%s\"\n", i, ((char **)eventPaths)[i]);
+        args[i + 1] = ((char **)eventPaths)[i];
     }
-    
-    exec_command();
+    exec_command(args);
 }
 
 static void print_usage_and_exit()
@@ -171,7 +170,7 @@ int main(int argc, char *argv[])
     
     FSEventStreamRelease(stream);
     
-    exec_command();
+    //exec_command();
     
     CFRunLoopRun();
 }
